@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Facebook</title>
+        <meta charset="utf-8">
+        <style>
+        body{
+            padding: 5px 15px;
+            
+  background: #f0f2f5;
+  width: 1000px;
+  
+        }
+        h1{
+            color:#1877f2;
+            font-size: 50px;
+  margin-bottom: 10px;
+        }
+        .sp{position: absolute;
+            top:530px;
+            left:270px;
+            margin-left:200px;
+          text-align:center;
+          font-size:18px
+        }
+        .gre{
+ font-weight:600;
+        }
+        .greet{
+            font-family: 'Roboto', sans-serif;
+            position: absolute;
+           padding:10px;
+            top:190px;
+            left:80px;
+            margin-right:100px;
+        }
+        form{position: absolute;
+             width: 400px;
+             height:280px;
+             margin-left:170px;
+      top:200px;
+      left:300px;
+      padding: 15px;
+      border: 1px solid #white;
+      border-radius: 5px;
+      text-align:center;
+      background-color:white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+            ::placeholder{
+               font-size:15px;
+               color: #999;
+            }
+             
+            .textbox {
+                margin: 10px auto;
+                padding: 10px;
+              border: 2px solid;
+             border-radius: 5px;
+            font-size: 14px;
+            width: 380px;
+          height: 20px
+            }
+          .textbox:focus{
+          outline: none;
+          border-color: #1877f2;
+      }
+      #enter{
+          color:white;
+          font-size:20px;
+          margin: 10px auto;
+          background-color: #1877f2;
+          padding: 10px 160px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          height:40px;
+          width:400px;
+      }
+     hr {
+  border: none;
+  height: 1px;
+  background-color: rgb(145, 136, 145);
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.forgot{
+  text-align: center;
+    color: blue;
+  font-size:18px;
+  text-decoration: none;
+}
+.forgot:hover{
+    text-decoration: underline;
+}
+.create{
+  text-align: center;
+  padding: 15px 20px;
+  background: rgb(0, 199, 27);
+  border-radius: 5px;
+  color: white;
+   text-decoration: none;
+  font-weight: 600;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="greet">
+      <h1>facebook</h1>
+          <p class="gre">Facebook помогает вам всегда <br>
+          оставаться на связи и общаться со <br>
+          своими знакомыми</p>
+          </div>
+        <form>
+      <input type="email" class="textbox" placeholder="Электронный адрес или номер телефона">
+       <input type="password" class="textbox" placeholder="Пароль">
+        <button id="enter" type="submit">Вход</button>
+        <a href="#" class="forgot">Забыли пароль?</a>
+        <hr>
+        <a href="#" class="create">Создать аккаунт</a>
+        </form>
+        <p class="sp"><strong>Создать Страницу</strong> знаменитости, музыкальной группы <br> или компании.</p>
+    </body>
+</html>

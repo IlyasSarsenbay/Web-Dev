@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Instagram</title>
+        <meta charset="utf-8">
+        <style>
+        body{
+            padding: 5px 15px;  
+  background:#fafafa;
+  width: 1000px;
+  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        }
+          .pag{
+          position:absolute;
+          bottom:900px;
+          left:300px;
+          }
+        #logo{
+        margin-bottom: 30px;
+        }
+        .sp{position: absolute;
+            top:790px;
+            left:600px;
+          text-align:center;
+          font-size:18px;
+          width:250px;
+        }
+        #gret{
+            position: absolute;
+           padding:10px;
+            top:190px;
+            left:40px;
+            margin-right:100px;
+        }
+        #log{position: absolute;
+             width: 450px;
+             height:450px;
+             margin-left:170px;
+      top:200px;
+      left:300px;
+      padding: 15px;
+      border: 2px solid #e6e6e6;
+      border-radius: 5px;
+      text-align:center;
+      background-color:white;
+        }
+          #new{
+          width:420px;
+          height:15px;
+          text-align:center;
+          padding-top:30px;
+          padding-bottom:40px;
+          padding-left:30px;
+          padding-right:30px;
+          position:absolute;
+          text-align:center;
+          border-radius: 5px;
+           border: 2px solid #e6e6e6;
+           background-color:white;
+          left:470px;
+          top:700px;
+          font-size:19px;
+          }
+        
+            ::placeholder{
+               font-size:15px;
+               color: #999;
+            }
+             
+            .textbox {
+                margin: 5px auto;
+                padding: 10px;
+              border: 1px solid #e6e6e6;
+             border-radius: 1px;
+            font-size: 14px;
+            width: 340px;
+          height: 20px
+            }
+          
+         
+      #enter{
+          color:white;
+          font-size:20px;
+          margin: 5px auto;
+          background-color:#3897f0;
+          padding: 15x 160px;
+          border: none;
+          border-radius: 5px;
+          height:40px;
+          width:360px;
+          font-size: 20px;
+          text-align:center;
+          cursor: pointer;
+      }
+     hr {
+          position: relative;
+  border: none;
+  height: 1px;
+  width:120px;
+  background-color: rgb(145, 136, 145);
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+          #hr1{
+          right:100px;
+          }
+          #or{
+          position:relative;
+          bottom:42px;
+          color:#999;
+          }
+          
+          #hr2{
+          bottom:70px;
+          left:100px;
+          }
+.forgot{
+     margin-top: 20px;
+  text-align: center;
+    color: #003569;
+  font-size:15px;
+  text-decoration: none;
+}
+.forgot:hover{
+    text-decoration: underline;
+}
+.create{
+  text-align: center;
+  background-color: white;
+  color: #3897f0;
+   text-decoration: none;
+  font-weight: 600;
+            }
+          .field {
+  margin: 10px 0;
+  position: relative;
+  font-size: 14px;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+          input {
+  padding: 9px 0px 7px 9px;
+  font-size: 12px;
+  width: 16rem;
+  height: 1.2rem;
+  outline: none;
+  background: #fafafa;
+  border-radius: 3px;
+  border: 1px solid #efefef;
+}
+          label {
+  position: absolute;
+  pointer-events: none;
+  left: 55px;
+  transform: translateY(10px);
+  transition: all ease-out 0.1s;
+  font-size: 18px;
+  color: #999;
+  padding-top: 5px;
+          
+}
+          input:not(:placeholder-shown) + label {
+  transform: translateY(0);
+  font-size: 11px;
+}
+          .face{
+          position:absolute;
+          top:350px;
+          left:130px;
+          border:none;
+          color:#385185;
+          background-color:white;
+          padding:5px;
+          font-size:20px;
+          cursor:pointer;
+          }
+          #play{
+          position:absolute;
+          top:840px;
+          left:520px;
+          cursor:pointer;
+          }
+        </style>
+    </head>
+    <body> 
+      <div class="pag">
+      <img id="gret"src="img/inst.png" width="400">
+        <form id="log">
+          <img id="logo" src="img/insta.png" width="200">
+            <div class="field">
+      <input type="email" class="textbox" placeholder=""> <label for="username">Телефон, имя пользователя или эл. адрес</label>
+       <input type="password" class="textbox" placeholder="">
+          <label for="password">Пароль</label></div>
+        <button id="enter" type="submit">Войти</button>
+         <hr id="hr1"> <span id="or">ИЛИ</span> <hr id="hr2">
+          <button class="face" type="button">
+                    <img src="img/face.png" width="20">  Войти через фейсбук</span>
+                </button> 
+        <a href="#" class="forgot">Забыли пароль?</a>
+        </form>
+           <form id="new">
+             <span>У вас еще нет аккаунта?</span>
+         <a href="#" class="create">Зарегистрироваться</a>
+           </form>
+        <p class="sp">Установите приложение.</p>
+           <img id="play"src="img/pla.png" width="400">
+             </div>
+    </body>
+</html>
