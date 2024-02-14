@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Browser</title>
+</head>
+<style>
+  body {
+  margin: 0px;
+}    
+#black{
+  display:flex;
+  background-color:black;
+  color:grey;
+  height:40px;
+  width:100%;
+  box-sizing: border-box;
+}
+h2{
+  display:flex;
+  position:relative;
+  left:40px;
+  top:-12px;
+}
+h1{
+  display:flex;
+  position:relative;
+  left:150px;
+}
+#textbox{
+  display:flex;
+  position:relative;
+  left:210px;
+  border: 1px solid #e6e6e6;
+  border-radius:2px;
+  padding:12px;
+  height:10px;
+  width:400px;
+  margin-bottom:40px;
+}
+#button{
+  display:flex;
+  position:relative;
+  left:670px;
+  top:-74px;
+  padding:9px;
+  border:none;
+  border-radius:2px;
+  background-color:rgb(88, 80, 235);
+  color: white;
+  cursor:pointer;
+}
+
+.checkbox{
+  display:flex;
+  position:relative;
+  display:flex;
+  cursor:pointer;
+  color:#e6e6e6;
+  border:2px solid #e6e6e6;
+  border-radius:2px;
+  left:-50px;
+  top:20px;
+}
+
+  ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  position: relative;
+  left:160px;
+  height:30px;
+  padding: 15px 20px 35px 60px;
+  width:600px;
+  border: 1px solid #e6e6e6;;
+  border-radius:2px;
+  background: white;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+ul li:hover {
+  background: #ddd;
+}
+
+ul li.checked {
+  text-decoration: line-through;
+}
+
+.close {
+  display:flex;
+  cursor:pointer;
+  position: absolute;
+  left: 560px;
+  top: 30px;
+}
+  
+
+ 
+  </style>
+<body>
+  <form id="black">
+    <h2>ToDo List</h2>
+  </form>
+  <h1>
+    ToDo List
+  </h1>
+  <input type="text" id="textbox" placeholder="New Task">
+   <button id="button" onclick="newElement()">Add</button>
+    <ul id="myUL">
+</ul>
+  <script>
+   var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var img = document.createElement("IMG");
+  img.src = "img/basket.png"; 
+  img.alt = "Basket";
+  img.className = "close";
+   img.width = 20; 
+  img.height = 20;
+   myNodelist[i].appendChild(img);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'INPUT' && ev.target.type === 'checkbox') {
+    var listItem = ev.target.parentElement;
+    listItem.classList.toggle('checked');
+  }
+}, false);
+
+function newElement() {
+  var li = document.createElement("li");
+  var checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  checkbox.className = "checkbox";
+  li.appendChild(checkbox);
+  var inputValue = document.getElementById("textbox").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("textbox").value = "";
+ 
+   var img = document.createElement("IMG");
+  img.src = "img/basket.png"; 
+  img.alt = "Basket";
+  img.className = "close";
+   img.width = 20; 
+  img.height = 20;
+  li.appendChild(img);
+ 
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+ </script>
+</body>
+
+</html>
