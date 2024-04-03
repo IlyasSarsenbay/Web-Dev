@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Microsoft</title>
+        <meta charset="utf-8">
+        <style>
+          body{
+          width:685px;
+          font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+          }
+          .titul{
+          border: 2px solid transparent;
+          position:relative;
+          border: none;
+          background-color:white;
+          font-size:18px;
+          padding-right:25px;
+          cursor: pointer;
+          }
+          .arrow {
+          position: absolute;
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+ right: 9px;
+      top: 30%; 
+  padding: 3px;
+}
+          .down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+         .right {
+          position: relative;
+          top:-1px;
+          left:5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+          .as{
+          border:solid white;
+          border-width: 0 1px 1px 0;
+          }
+          .ar{
+          border:solid rgb(47, 62, 201);
+          border-width: 0 1px 1px 0;
+          }
+          #loupe{
+          position:absolute;
+          }
+          #me{
+          position:absolute;
+          bottom:1px;
+          }
+          .righti{
+          position:absolute;
+          right:130px;
+          top:20px;
+          }
+          .titul:hover {
+border-bottom: 2px solid #000 ; 
+          margin-bottom: 0;
+    }
+          .mic{
+          top:6px;
+          }
+          .mic:hover{
+          border-bottom: 0px; 
+          }
+          .man{
+          position:relative;
+          border: none;
+          height:45px;
+          width:200px;
+          font-size:18px;
+          padding-right:25px;
+          cursor: pointer;
+          }
+          .six{
+          color:white;
+          background-color:black;
+          }
+          .one{
+          background-color:rgb(232, 232, 232);
+          }
+          .bl{
+          position: relative;
+          right:40px;
+          background-color: white;
+          color: rgb(47, 62, 201);
+          }
+          .main{
+          position:absolute;
+          top:70px;
+          height:210px;
+          padding:130px;
+          background-color:rgb(232, 232, 232);;
+          }
+          #win{
+          position:absolute;
+          top:0px;
+          left:670px;
+          }
+          #ph{
+          position:absolute;
+          left:1px;
+          top:570px
+          }
+          .ph{
+          position:absolute;
+          top:750px;
+          left:20px;
+          font-size:12px;
+          }
+          .edge{
+          position:absolute;
+          left:349px;
+          }
+          .drive{
+          position:absolute;
+          left:689px;
+          }
+          .ed{
+          left:-55px;
+          }
+          .mo{
+          left:-25px;
+          }
+          .wi{
+          position:absolute;
+          left:1020px;
+          }
+      </style>
+    </head>
+    <body> 
+      <button class="titul mic"> <img src="img/mic.png" width="110"></button> 
+      <button class="titul">Microsoft365</button>
+      <button class="titul">Office</button>
+      <button class="titul">Windows</button>
+      <button class="titul">Поддержа</button>
+        <div class="righti">
+        <button class="titul">Все продукты Microsoft <i class="arrow down"></i></button>
+        <button class="titul">Поиск <img id="loupe" src="img/loupe.png" width="25"></button> <button class="titul">Войти <img id="me" src="img/me.jpeg" width="30"></button>
+          </div>
+          <form class="main">
+            <h1>Microsoft 365</h1>
+              <p>Приложение Office премиум, дополнительное облачное хранилище, <br>
+                продвинутые инструменты обеспечения безопасности - все в одной <br>
+                удобной подписке.</p>
+                <button class="man six">До 6 человек <i class="arrow right as"></i></button>
+                <button class="man one">Для 1 человека   <i class="arrow right"></i></button>
+                <img id="win" src="img/win.jpeg" width="672">
+                </form>
+                <img id="ph" src="img/ph.jpeg" width="1350">
+                  <form class="ph">
+            <h2>Microsoft Teams</h1>
+              <p>Общайтесь,проводите собрания, звоните и <br> сотрудничайте.</p>
+                <button class="man bl">Подробнее<i class="arrow right ar"></i></button>
+                </form>
+                    <form class="ph edge">
+            <h2>Microsoft Edge</h1>
+              <p>Потрясающая производительность, больше <br> конфиденциальности, продуктивности и <br> дополнительных возможностей.</p>
+                <button class="man bl ed">Скачать<i class="arrow right ar"></i></button>
+                </form>
+                <form class="ph drive">
+            <h2>Microsoft OneDrive</h1>
+              <p>Сохраняйте свои файлы и фотографии на <br> OneDrive — они будут доступны с любого устройства <br> и где угодно.</p>
+                <button class="man bl">Подробнее<i class="arrow right ar"></i></button>
+                </form>
+                <form class="ph wi">
+            <h2>Обновление Windows 10</h1>
+              <p>Предоставляя новые функции, которые помогут вам <br> успевать больше, общаться и экономить <br> время.</p>
+                <button class="man bl mo">Узнать больше<i class="arrow right ar"></i></button>
+                </form>
+    </body>
+</html>
