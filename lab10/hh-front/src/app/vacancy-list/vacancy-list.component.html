@@ -1,0 +1,6 @@
+<h2>Vacancies List</h2>
+<ul>
+  <li *ngFor="let vacancy of vacancies" (click)="viewVacancyDetails(vacancy.id)">
+    {{ vacancy.name }} - {{ vacancy.salary }}
+  </li>
+</ul>

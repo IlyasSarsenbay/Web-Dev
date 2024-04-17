@@ -1,0 +1,42 @@
+
+.company-details {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.company-details h2 {
+  font-size: 24px;
+}
+
+.company-details p {
+  margin: 5px 0;
+}
+
+.vacancies {
+  margin-top: 20px;
+}
+
+.vacancies h3 {
+  font-size: 20px;
+}
+
+.vacancies ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vacancies li {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.vacancies li p {
+  margin: 5px 0;
+}
+  
+  
+  
+  

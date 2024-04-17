@@ -16,8 +16,8 @@ def company_list(request):
         serializer = CompanySerializer(data=data)
         if serializer.is_valid():
             serializer.save()
-            return JsonResponse(serializer.data, status=201)  # 201 Created
-        return JsonResponse(serializer.errors, status=400)  # 400 Bad Request
+            return JsonResponse(serializer.data, status=201)  
+        return JsonResponse(serializer.errors, status=400)  
 
 @csrf_exempt
 def company_detail(request, id):
@@ -34,7 +34,7 @@ def company_detail(request, id):
         return JsonResponse(serializer.errors, status=400)
     elif request.method == "DELETE":
         company.delete()
-        return JsonResponse({'message': 'Company deleted successfully'}, status=204)  # 204 No Content
+        return JsonResponse({'message': 'Company deleted successfully'}, status=204)  
 
 @csrf_exempt
 def company_vacancies(request, id):
@@ -55,8 +55,8 @@ def vacancy_list(request):
         serializer = VacancySerializer(data=data)
         if serializer.is_valid():
             serializer.save()
-            return JsonResponse(serializer.data, status=201)  # 201 Created
-        return JsonResponse(serializer.errors, status=400)  # 400 Bad Request
+            return JsonResponse(serializer.data, status=201)  
+        return JsonResponse(serializer.errors, status=400)  
 
 @csrf_exempt
 def vacancy_detail(request, id):
@@ -73,11 +73,11 @@ def vacancy_detail(request, id):
         return JsonResponse(serializer.errors, status=400)
     elif request.method == "DELETE":
         vacancy.delete()
-        return JsonResponse({'message': 'Vacancy deleted successfully'}, status=204)  # 204 No Content
+        return JsonResponse({'message': 'Vacancy deleted successfully'}, status=204)  
 
 @csrf_exempt
 def top_ten_vacancies(request):
     if request.method == "GET":
-        vacancies = Vacancy.objects.order_by('-salary')[:10]
+        vacancies = Vacancy.objects.order_by('salary')[0:10]
         serializer = VacancySerializer(vacancies, many=True)
         return JsonResponse(serializer.data, safe=False)
